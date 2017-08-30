@@ -50,4 +50,12 @@ public class CharStack
     //TAS: return whether or not the stack is full
     return top == MAX_CAP-1;
   }
+
+  public String toString(){
+    String result = "";
+    for(int i=0; i<top+1; i++){
+      result += s[top];
+    }
+    return result;
+  }
 }
