@@ -47,13 +47,7 @@ public class Converter{
             System.out.print(top);
           }while(!(stack.isEmpty() ||
             precedenceOrder(current) > precedenceOrder(stack.peek())));
-          if(!stack.isEmpty() &&
-            precedenceOrder(current) > precedenceOrder(stack.peek())){
-            stack.push(current);
-          }
-          if(stack.isEmpty()){
-            stack.push(current);
-          }
+          stack.push(current);
         }
       }
     }
