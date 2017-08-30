@@ -8,14 +8,14 @@ public class ParenthesisTester{
 
     System.out.println("Input a parenthesized string:");
     String line = scan.nextLine();
-    boolean error = false;
+    boolean error = false; // too many ')'
 
     // examine the expression
     for(int i=0; i<line.length(); i++){
-      char next = line.charAt(i);
-      if(next == '('){          // case 1: '(' is read
-        stack.push(next);
-      }else if(next == ')'){    // case 2: ')' is read
+      char current = line.charAt(i);
+      if(current == '('){          // case 1: '(' is read
+        stack.push(current);
+      }else if(current == ')'){    // case 2: ')' is read
         if(!stack.isEmpty()){
           stack.pop();
         }else{
