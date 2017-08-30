@@ -29,6 +29,13 @@ public class CharStack
     return result;
   }
 
+  public char peek(){
+    //PRE: the stack is not empty, i.e. top != -1
+    //POS: the stack stays the same
+    //TAS: return the item on the top of the stack
+    return s[top];
+  }
+
   public boolean isEmpty(){
     //PRE:
     //POS:
