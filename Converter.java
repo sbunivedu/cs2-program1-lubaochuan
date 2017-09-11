@@ -18,9 +18,7 @@ public class Converter{
 
   // turn an operator to a precedence order
   public static int precedenceOrder(char c){
-    if(c=='(' || c==')'){
-      return 3;
-    }else if(c == '*' || c == '/' ){
+    if(c == '*' || c == '/' ){
       return 2;
     }else {
       return 1;
